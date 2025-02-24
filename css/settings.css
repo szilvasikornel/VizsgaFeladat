@@ -1,0 +1,271 @@
+/* Alapstílusok */
+body {
+    background-image: url('../images/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
+.headline {
+    background: linear-gradient(90deg, rgba(255,104,77,0.9) 0%, rgba(255,77,77,0.9) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.headline ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headline ul li {
+    margin: 0;
+}
+
+.headline ul li h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.headline ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.headline ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout button */
+#log {
+    margin-left: auto;
+}
+
+#log li a {
+    background: rgba(255, 0, 0, 0.7);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#log li a:hover {
+    background: rgba(255, 0, 0, 1);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+.content {
+    background-color: rgba(255, 104, 77, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-group label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+form .input-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form .input-group input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    background-color: rgba(255, 104, 77, 0.8);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgba(255, 104, 77, 1);
+    transform: scale(1.05);
+}
+
+.delete-account-btn, .modify-account-btn {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* Success and error messages */
+.success-message, .error-message {
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.7);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 500px;
+}
+
+/*////////////////////////RESPONSIVE STYLES/////////////////////////////////////////////*/
+
+@media (max-width: 1200px) {
+    .headline ul {
+        gap: 10px;
+    }
+
+    form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headline ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .headline ul li h3 {
+        font-size: 1.2rem;
+    }
+
+    .headline ul li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    #log {
+        margin-top: 15px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .delete-account-btn, .modify-account-btn {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Nagyon kis képernyők (telefonok) esetén */
+    .headline {
+        padding: 10px;
+    }
+
+    .headline ul li a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    form .input-group label {
+        font-size: 1rem;
+    }
+
+    form .input-group input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

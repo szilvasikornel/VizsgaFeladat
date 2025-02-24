@@ -1,0 +1,250 @@
+/*////////////////////////CONTACT PAGE/////////////////////////////////////////////*/
+
+body {
+    background-image: url('../images/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.wrapper main {
+    margin-left: 30%;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
+.headline {
+    background: linear-gradient(90deg, rgba(255,104,77,0.9) 0%, rgba(255,77,77,0.9) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    margin-top: 7px;
+    flex-wrap: wrap;
+}
+
+.headline ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headline ul li {
+    margin: 0;
+}
+
+.headline ul li h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.headline ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.headline ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout button */
+#log {
+    margin-left: auto;
+}
+
+#log li a {
+    background: rgba(255, 0, 0, 0.7);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#log li a:hover {
+    background: rgba(255, 0, 0, 1);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+.content {
+    text-align: center;
+    background-color: rgba(255, 104, 77, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.contact-info a {
+    color: #f1c40f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #e74c3c;
+}
+
+.contact-form {
+    background: rgba(255, 104, 77, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #f1c40f;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #f1c40f;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*////////////////////////RESPONSIVE STYLES/////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+    .headline {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .headline ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .headline ul li a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .download-btn {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline ul li a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .content {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

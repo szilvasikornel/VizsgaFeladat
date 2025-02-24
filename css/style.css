@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/background2.jpeg) no-repeat center/cover;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.015);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+form h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin-top: 40px;
+}
+
+.input-group {
+    position: relative;
+    margin: 35px 15px 0;
+    width: 320px;
+}
+
+.input-group input {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 0;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.input-group .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-group input:focus~.label, .input-group input:valid~.label {
+    top: -20px;
+    font-size: 14px;
+    color: #efe9e9;
+}
+
+#button_login{
+    margin: 40px 0 5px 0;
+}
+
+.check{
+    margin: 15px;
+}
+
+.check label {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+}
+
+.check label input {
+    appearance: none;
+    position: absolute;
+    left: 0;
+}
+
+.check label input::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check label input:checked::before {
+    content: '\2714';
+    background: rgba(255, 255, 255, 0.15);
+}
+
+form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.signin {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signin p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.signin p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signin p a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* Szem ikon stílusok */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px; /* kisebb szem ikon */
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eye-icon i {
+    font-size: 18px; /* A szem ikon méretének csökkentése */
+}
+
+.eye-icon:hover {
+    color: #ddd;
+}
+
+#terms-error{
+    display: none;
+}
+
+.error-message {
+    background-color: #f8d7da; /* Piros háttér */
+    color: #721c24; /* Sötétpiros szöveg */
+    border: 1px solid #f5c6cb; /* Halványpiros szegély */
+    padding: 10px;
+    margin: 0 0 50px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #d4edda; /* Zöld háttér */
+    color: #155724; /* Sötétzöld szöveg */
+    border: 1px solid #c3e6cb; /* Halványzöld szegély */
+    padding: 10px;
+    margin: 50px 0;
+    border-radius: 5px;
+    text-align: center;
+}

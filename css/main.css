@@ -1,0 +1,296 @@
+/* Alapstílusok */
+body {
+    background-image: url('../images/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
+.headline {
+    background: linear-gradient(90deg, rgba(255,104,77,0.9) 0%, rgba(255,77,77,0.9) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Engedélyezi az elemek törését kisebb képernyőkön */
+}
+
+.headline ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Linkek közötti távolság */
+}
+
+.headline ul li {
+    margin: 0;
+}
+
+.headline ul li h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.headline ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.headline ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout button */
+#log {
+    margin-left: auto;
+}
+
+#log li a {
+    background: rgba(255, 0, 0, 0.7);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#log li a:hover {
+    background: rgba(255, 0, 0, 1);
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+.content {
+    background-color: rgba(255, 104, 77, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.datas {
+    padding: 20px;
+}
+
+.datas ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.datas li {
+    flex: 1;
+}
+
+.datas li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.datas video {
+    margin-left: 80px;
+}
+
+/*////////////////////////SCREEN PLANS/////////////////////////////////////////////*/
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.second {
+    background-color: rgba(255, 104, 77, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 2;
+}
+
+.screen-img ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    justify-content: right;
+}
+
+.screen-img ul li {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.screen-img ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px; /* Ez biztosítja, hogy mindig az alján legyen */
+}
+
+/*////////////////////////RESPONSIVE STYLES/////////////////////////////////////////////*/
+
+@media (max-width: 1200px) {
+    .screen-img ul {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .headline {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .headline ul {
+        display: block;
+    }
+
+    .headline ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header reszponzív igazítás */
+    .headline {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 20px; /* A fejléc elemei közötti tér */
+    }
+
+    .headline ul {
+        display: block;
+        width: 100%;
+    }
+
+    .headline ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Content terület */
+    .content {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Képek reszponzív méret */
+    .datas li {
+        margin-bottom: 15px;
+    }
+
+    .datas img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* A konténer oszlopok egy sorba rendezése */
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .screen-img ul {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Gombok középre igazítása */
+    .download-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Nagyon kis képernyők (telefonok) esetén */
+    .headline ul li h3 {
+        font-size: 1.2rem;
+    }
+
+    .headline ul li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Mobil barát fő tartalom */
+    .content {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    /* Mobil képek és videók */
+    .datas li {
+        margin-bottom: 20px;
+    }
+
+    .screen-img ul {
+        grid-template-columns: 1fr;
+    }
+
+    .second {
+        flex: 1;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
